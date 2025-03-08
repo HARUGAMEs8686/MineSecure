@@ -51,7 +51,7 @@
       background: linear-gradient(145deg, #f0f0f0, #ffffff);
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
-      white-space: nowrap; /* テキスト折り返し防止 */
+      white-space: nowrap;
     }
 
     .home-link:hover {
@@ -73,7 +73,7 @@
       border-radius: 25px;
       background: rgba(255, 255, 255, 0.9);
       transition: all 0.3s ease;
-      white-space: nowrap; /* テキスト折り返し防止 */
+      white-space: nowrap;
     }
 
     .nav-links a:hover {
@@ -87,7 +87,7 @@
     .container {
       width: 90%;
       max-width: 600px;
-      margin-top: 30px; /* ヘッダー削除に伴いマージン調整 */
+      margin-top: 30px;
       background: #ffffff;
       padding: 40px;
       border-radius: 20px;
@@ -196,6 +196,134 @@
       }
     }
 
+    /* 使い方説明セクション */
+    .usage-section {
+      width: 90%;
+      max-width: 600px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .usage-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #1a3c5e;
+    }
+
+    .usage-content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: stretch;
+    }
+
+    .usage-step {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #f9f9f9;
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .usage-step:hover {
+      background: #f0f0f0;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .step-text {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #333;
+      text-align: left;
+      flex: 1;
+    }
+
+    /* 他のサイトリンクセクション */
+    .other-links-section {
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .other-links-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #1a3c5e;
+    }
+
+    .links-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .link-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      width: 250px;
+      transition: all 0.3s ease;
+    }
+
+    .link-button img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .link-button span {
+      margin-top: 15px;
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    .link-button:hover {
+      transform: translateY(-5px);
+    }
+
+    .link-button:hover img {
+      transform: scale(1.05);
+    }
+
+    .link-button:hover span {
+      color: #007bff;
+    }
+
     /* スマホ対応 */
     @media screen and (max-width: 600px) {
       .container {
@@ -208,28 +336,76 @@
       }
 
       .navbar {
-        padding: 8px 10px; /* パディングを縮小 */
-        flex-wrap: nowrap; /* 折り返しを防ぐ */
-        overflow-x: auto; /* 横スクロール可能に */
-        white-space: nowrap; /* 折り返し防止 */
+        padding: 8px 10px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
       }
 
       .home-link {
         padding: 8px 12px;
-        font-size: 0.9em; /* フォントサイズを縮小 */
+        font-size: 0.9em;
       }
 
       .nav-links {
-        gap: 8px; /* ボタン間の隙間を縮小 */
+        gap: 8px;
       }
 
       .nav-links a {
         padding: 8px 12px;
-        font-size: 0.9em; /* フォントサイズを縮小 */
+        font-size: 0.9em;
       }
 
       button {
         width: 80%;
+      }
+
+      /* 使い方説明のスマホ対応 */
+      .usage-section {
+        padding: 20px;
+      }
+
+      .usage-section h2 {
+        font-size: 1.6em;
+      }
+
+      .usage-step {
+        padding: 10px 15px;
+      }
+
+      .step-number {
+        width: 25px;
+        height: 25px;
+        font-size: 0.9em;
+      }
+
+      .step-text {
+        font-size: 1em;
+      }
+
+      /* 他のサイトリンクのスマホ対応 */
+      .other-links-section {
+        padding: 20px;
+      }
+
+      .other-links-section h2 {
+        font-size: 1.6em;
+      }
+
+      .links-container {
+        gap: 20px;
+      }
+
+      .link-button {
+        width: 180px;
+      }
+
+      .link-button img {
+        height: 100px;
+      }
+
+      .link-button span {
+        font-size: 1.1em;
       }
     }
   </style>
@@ -256,6 +432,43 @@
     </form>
 
     <p id="result"></p>
+  </div>
+
+  <!-- 使い方説明セクション -->
+  <div class="usage-section">
+    <h2>使い方説明</h2>
+    <div class="usage-content">
+      <div class="usage-step">
+        <span class="step-number">1</span>
+        <p class="step-text">ゲーマータグを入力欄に入力してください</p>
+      </div>
+      <div class="usage-step">
+        <span class="step-number">2</span>
+        <p class="step-text">「確認」ボタンを押して、ブラックリストに登録されているかを確認</p>
+      </div>
+      <div class="usage-step">
+        <span class="step-number">3</span>
+        <p class="step-text">結果が「安全」または「危険」として表示されます</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 他のサイトリンクセクション -->
+  <div class="other-links-section">
+    <h2>他のサイトもチェック</h2>
+    <div class="links-container">
+      <!-- サイト1 -->
+      <a href="https://harugames8686.github.io/HARUAddons/home.html" class="link-button">
+        <img src="./HARUAddons.png" alt="Site 1">
+        <span>HARUAddons</span>
+      </a>
+      <!-- サイト2 -->
+      <!-- <a href="https://harugames8686.github.io/HARUAddons/home.html" class="link-button">
+        <img src="./HARUSecurity.png" alt="Site 2">
+        <span>HARUSecurity</span>
+      </a> -->
+      <!-- 必要に応じて追加 -->
+    </div>
   </div>
 
   <script>
