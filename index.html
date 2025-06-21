@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ゲーマータグ確認 - MineSecure</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ナビゲーションバー -->
+  <nav class="navbar">
+    <a href="index.html" class="home-link">Home</a>
+    <div class="nav-links">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_7x79t8Bh5dg2kFNZDTemcrkN0g0jwJ04pxHUqIfVvUP5JA/viewform?usp=dialog"><span class="icon">⚠️</span> ゲーマータグを報告する</a>
+      <a href="https://x.com/haru_addons">サポート(X)</a>
+    </div>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <div class="container">
+    <h1>MineSecure</h1>
+    <form id="checkForm">
+      <div class="input-group">
+        <input type="text" id="tag" name="tag" placeholder="ゲーマータグを入力" required>
+        <button type="submit" id="submitButton">確認</button>
+      </div>
+    </form>
+
+    <p id="result"></p>
+  </div>
+
+  <!-- 使い方説明セクション -->
+  <div class="usage-section">
+    <h2>使い方説明</h2>
+    <div class="usage-content">
+      <div class="usage-step">
+        <span class="step-number">1</span>
+        <p class="step-text">ゲーマータグを入力欄に入力してください</p>
+      </div>
+      <div class="usage-step">
+        <span class="step-number">2</span>
+        <p class="step-text">「確認」ボタンを押して、ブラックリストに登録されているかを確認</p>
+      </div>
+      <div class="usage-step">
+        <span class="step-number">3</span>
+        <p class="step-text">結果が「安全」または「危険」として表示されます</p>
+      </div>
+      <div class="usage-step">
+        <span class="step-number">※</span>
+        <p class="step-text">危険では無い場合でも、ブラックリストにないだけで安全とは限りません。慎重に判断してください。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 他のサイトリンクセクション -->
+  <div class="other-links-section">
+    <h2>他のサイトもチェック</h2>
+    <div class="links-container">
+      <!-- サイト1 -->
+      <a href="https://haruaddons.f5.si/" class="link-button">
+        <img src="./HARUAddons.png" alt="Site 1">
+        <span>HARUAddons</span>
+      </a>
+      <!-- サイト2 -->
+      <a href="https://haruaddons.f5.si/securitycraft/securitycraft_introduction.html" class="link-button">
+        <img src="./SecurityCraft.png" alt="Site 2">
+        <span>SecurityCraft</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
