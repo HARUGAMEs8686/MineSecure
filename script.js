@@ -10,12 +10,12 @@ document.getElementById('checkForm').onsubmit = function(event) {
 
   // ロード中の表示
   resultElement.style.display = "block";
-  resultElement.innerText = "🔄 確認中...";
+  resultElement.innerText = "確認中...";
   resultElement.classList.add("loading");
   submitButton.disabled = true;
 
   // Google Apps ScriptのデプロイURL
-  var url = "https://script.google.com/macros/s/AKfycbzuNyKr3DppnrztKvUE8CDC9LCtWW5LnahpA_5r6ppQemxPDRqFuvVLpnphpWSwPDg/exec";
+  var url = "https://script.google.com/macros/s/AKfycbwcQhPruAWEff8yXrMwjyqFRh2l-l1odsn3pwZnYCA-ualONWvWQB8AvojhgNE6XaL-/exec";
 
   // APIリクエスト
   fetch(url + "?tag=" + encodeURIComponent(tag))
