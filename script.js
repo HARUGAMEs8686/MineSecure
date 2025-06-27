@@ -15,7 +15,7 @@ document.getElementById('checkForm').onsubmit = function(event) {
   submitButton.disabled = true;
 
   // Google Apps ScriptのデプロイURL
-  var url = "https://script.google.com/macros/s/AKfycbyeG4VQcpw5sfs_qrys4aTdoXNVgI4K8Ef-r1_Ke-H4rreOMFZs42AL_upiqiY6C7Zb/exec";
+  var url = "https://script.google.com/macros/s/AKfycbzuNyKr3DppnrztKvUE8CDC9LCtWW5LnahpA_5r6ppQemxPDRqFuvVLpnphpWSwPDg/exec";
 
   // APIリクエスト
   fetch(url + "?tag=" + encodeURIComponent(tag))
