@@ -189,6 +189,63 @@
       }
     }
 
+    /* ゲーマータグ報告・取り消しセクション */
+    .report-section {
+        margin-top: 30px; /* メインコンテンツとの間隔を空ける */
+    }
+
+    .report-section .section-description {
+        margin-bottom: 20px;
+        font-size: 1.1em;
+        color: #555;
+    }
+
+    .report-section .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center; /* 中央揃え */
+    }
+
+    .report-section input[type="text"] {
+        width: 100%;
+        max-width: 400px; /* 入力欄の最大幅を設定 */
+    }
+
+    .report-section button {
+        width: 80%; /* ボタンの幅を調整 */
+        max-width: 250px; /* ボタンの最大幅を設定 */
+    }
+
+    .report-button {
+        background: linear-gradient(135deg, #e74c3c, #c0392b); /* 報告ボタンの色 */
+    }
+
+    .report-button:hover {
+        background: linear-gradient(135deg, #c0392b, #e74c3c);
+    }
+
+    .cancel-button {
+        background: linear-gradient(135deg, #f39c12, #d35400); /* 取り消しボタンの色 */
+    }
+
+    .cancel-button:hover {
+        background: linear-gradient(135deg, #d35400, #f39c12);
+    }
+
+    .report-result {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+        text-align: center;
+        width: 100%;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
     /* 使い方説明セクション */
     .usage-section {
       width: 90%;
@@ -399,5 +456,20 @@
 
       .link-button span {
         font-size: 1.1em;
+      }
+
+      /* ゲーマータグ報告・取り消しセクションのスマホ対応 */
+      .report-section .input-group {
+          gap: 10px;
+      }
+
+      .report-section input[type="text"] {
+          font-size: 1em;
+          padding: 12px 15px;
+      }
+
+      .report-section button {
+          font-size: 1.1em;
+          padding: 10px;
       }
     }
