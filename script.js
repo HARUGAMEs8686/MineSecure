@@ -15,7 +15,7 @@ document.getElementById('checkForm').onsubmit = function(event) {
   submitButton.disabled = true;
 
   // Google Apps ScriptのデプロイURL
-  var url = "https://script.google.com/macros/s/AKfycbwcQhPruAWEff8yXrMwjyqFRh2l-l1odsn3pwZnYCA-ualONWvWQB8AvojhgNE6XaL-/exec";
+  var url = "https://script.google.com/macros/s/AKfycbxUkcZikyTAlif9Cwb4kWGwW4EfVIXf5eO30vOpF6a1zEM8yyctaUCgYW-E7gOFBaqNtA/exec";
 
   // APIリクエスト
   fetch(url + "?tag=" + encodeURIComponent(tag))
@@ -43,3 +43,4 @@ document.getElementById('checkForm').onsubmit = function(event) {
       console.error(error);
     });
 };
+
