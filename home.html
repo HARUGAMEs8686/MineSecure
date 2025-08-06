@@ -2,12 +2,35 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <script>
-        window.location.href = "https://minesecure.f5.si/";
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineSecure アクセスのお知らせ</title>
+    <!-- Tailwind CSSを読み込み、簡単にスタイリングできるようにします -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Google FontsからInterフォントを読み込みます */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <p>リダイレクト中です。<a href="https://minesecure.f5.si/">ここをクリック</a>してください。</p>
+<body class="bg-white flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-lg shadow-lg text-center max-w-md w-full">
+        <!-- メッセージのタイトル -->
+        <h1 class="text-3xl font-bold text-red-600 mb-4 rounded-md">
+            アクセスエラー
+        </h1>
+        <!-- メインメッセージ -->
+        <p class="text-xl text-gray-800 leading-relaxed mb-4 rounded-md">
+            MineSecureにアクセスできなくなりました
+        </p>
+        <!-- URL変更とサポートへの案内 -->
+        <p class="text-lg text-gray-700 leading-relaxed mb-6 rounded-md">
+            URLが変更されています
+        </p>
+        <p class="text-md text-gray-600 rounded-md">
+            詳しくはサポートにお問い合わせください。
+        </p>
+    </div>
 </body>
 </html>
